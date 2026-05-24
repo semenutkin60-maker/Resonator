@@ -308,7 +308,7 @@ img {
 }
 
 .episode-page-icon {
-    width: 19px;
+    max-width: 19px;
     height: 13px;
 }
 
@@ -331,8 +331,9 @@ img {
 }
 
 .episode__player-live-dot {
-    width: 70px;
-    height: 70px;
+    max-width: 70px;
+    width: 100%;
+    max-height: 70px;
     border-radius: 50%;
     border: 2px solid var(--color-gray);
 }
@@ -415,6 +416,19 @@ img {
     .container {
         max-width: 960px;
     }
+
+    .episode__container {
+        bottom: 470px;
+    }
+
+    .episode__greetings-title {
+        font-size: 60px;
+        width: 500px;
+    }
+
+    .episode__card {
+        display: none;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -432,6 +446,43 @@ img {
     
     .header__logo {
         width: 110px;
+    }
+
+    .episode__container {
+        bottom: 370px;
+        margin-left: 100px;
+    }
+
+    .episode__greetings-title {
+        font-size: 50px;
+        width: 400px;
+    } 
+}
+
+@media (max-width: 850px) {
+    .episode__container {
+        bottom: 290px;
+        margin-left: 100px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .episode__greetings {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .episode__greetings-text {
+        text-align: center;
+    }
+
+    .episode__greetings-title {
+        font-size: 40px;
+        width: 500px;
+    } 
+
+    .episode__greetings-buttons {
+        justify-content: center;
     }
 }
 
@@ -491,6 +542,25 @@ img {
     .container {
         padding: 0 12px;
     }
+
+    .episode__container {
+        bottom: 250px;
+        margin-left: 100px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .episode__greetings-text {
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .episode__greetings-title {
+        font-size: 30px;
+        width: 500px;
+        text-align: center;
+    } 
 }
 
 @media (max-width: 480px) {
@@ -537,5 +607,44 @@ img {
 
     .episode__background {
         bottom: 50px;
+    }
+
+    .episode__container {
+        bottom: 200px;
+        margin-left: 100px;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .episode__greetings-text {
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .episode__greetings-title {
+        font-size: 23px;
+        width: 500px;
+        text-align: center;
+    } 
+
+    .episode__greetings-buttons {
+        justify-content: center;
+    }
+
+    .episode__icon-btn {
+        width: 124px;
+    }
+
+    .episode__icon-img {
+        width: 124px;
+    }
+}
+
+@media (max-width: 380px) {
+    .episode__container {
+        bottom: 180px;
+        
     }
 }
